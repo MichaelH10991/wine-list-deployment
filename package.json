@@ -1,0 +1,15 @@
+{
+  "name": "wine-list-deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongo-init.js",
+  "scripts": {
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "prune": "docker volume prune",
+    "reset": "docker-compose down && docker volume prune && docker-compose up -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
