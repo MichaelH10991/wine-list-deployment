@@ -3,9 +3,10 @@ services:
   # API
   wine-list-api:
     container_name: wine-list-api
+    platform: linux/${PLATFOMR}64
     env_file:
       - .env
-    image: docker.io/miker1997/wine-list-api:latest
+    image: docker.io/miker1997/wine-list-api:${PLATFORM}
     environment:
       DB_USER: ${MONGO_USER}
       DB_PASSWORD: ${MONGO_USER_PASSWORD}
