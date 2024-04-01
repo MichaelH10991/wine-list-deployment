@@ -10,6 +10,7 @@ services:
       DB_USER: ${MONGO_USER}
       DB_PASSWORD: ${MONGO_USER_PASSWORD}
       DB_HOST: ${DB_HOST}
+      CORS_HOST: ${CORS_HOST}
     ports:
       - "0.0.0.0:8080:8080"
     networks:
