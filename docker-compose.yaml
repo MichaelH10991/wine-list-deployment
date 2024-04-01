@@ -3,7 +3,7 @@ services:
   # API
   wine-list-api:
     container_name: wine-list-api
-    platform: linux/${PLATFOMR}64
+    platform: linux/${PLATFORM}64
     env_file:
       - .env
     image: docker.io/miker1997/wine-list-api:${PLATFORM}

@@ -12,4 +12,4 @@ db.createUser(
 );
 
 db.createCollection('users');
-db.createCollection('wine-lists');
+db.createCollection('winelists');
